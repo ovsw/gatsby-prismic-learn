@@ -22,6 +22,7 @@ const PageTemplate = ({ data }) => {
 export const query = graphql`
   query PageQuery($id: String) {
     prismicPage(id: { eq: $id }) {
+      _previewable
       data {
         document_display_name {
           text

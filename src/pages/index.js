@@ -33,6 +33,7 @@ const HomeTemplate = ({ data }) => {
 export const query = graphql`
   query Homepage {
     prismicHomepage {
+      _previewable
       data {
         banner_title {
           richText
